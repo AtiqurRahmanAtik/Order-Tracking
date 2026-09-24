@@ -155,7 +155,7 @@ export default function Home() {
 
         
 
-        <SupportCard />
+      <SupportCard orderId={order.id} />
       </div>
     </main>
   );
