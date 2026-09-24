@@ -1,36 +1,343 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Order Tracking
+## Live : https://order-tracking-ochre-two.vercel.app/
 
-## Getting Started
+A modern Order Tracking web application built with Next.js, React, TypeScript, Tailwind CSS, and Lucide React.
 
-First, run the development server:
+## 🚀 Technology Stack
 
-```bash
+This project uses the following technologies:
+
+Next.js 16.3.6 — React framework for building the application
+
+React 19.2.8 — UI library
+
+React DOM 19.2.8 — React rendering for the browser
+
+TypeScript 5 — Type-safe JavaScript development
+
+Tailwind CSS 4 — Utility-first CSS framework
+
+Lucide React 1.48.0 — Icon library
+
+ESLint 9 — Code linting and quality checks
+
+Node.js — JavaScript runtime
+
+npm — Package manager
+
+## 📋 Prerequisites
+
+Before starting the project, make sure you have the following installed:
+
+Node.js — Recommended: Node.js 20 or later
+
+npm — Comes with Node.js
+
+Git — Required if you are cloning the repository
+
+Check your installed versions:
+
+node -v
+npm -v
+git --version
+
+
+## 🚀 Quick Start
+
+For experienced developers, the complete setup is:
+
+git clone <YOUR_REPOSITORY_URL>
+cd order-tracking
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Then open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+For production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run build
+npm start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 📦 Installation
+## 1. Clone the Repository
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Clone the project using Git:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone <YOUR_REPOSITORY_URL>
+
+
+Move into the project directory:
+
+cd order-tracking
+
+
+If you already have the project files locally, simply open a terminal inside the project directory.
+
+## 2. Install Dependencies
+
+Install all required dependencies from package.json:
+
+npm install
+
+
+This will install:
+
+Next.js
+
+React
+
+React DOM
+
+TypeScript
+
+Tailwind CSS
+
+Lucide React
+
+ESLint
+
+Required type definitions
+
+Other development dependencies
+
+
+
+## ▶️ Run the Development Server
+
+Start the Next.js development server:
+
+npm run dev
+
+
+The application will normally be available at:
+
+http://localhost:3000
+
+
+Open the URL in your browser.
+
+The development server supports hot reloading, so changes to your source files will generally appear automatically.
+
+## 🏗️ Build the Application
+
+To create a production build:
+
+npm run build
+
+
+This command:
+
+Compiles the application
+
+Checks the application for build-time issues
+
+Generates the optimized production build
+
+## ▶️ Run the Production Application
+
+After successfully running the build command:
+
+npm start
+
+
+The production application will normally be available at:
+
+http://localhost:3000
+
+🧹 Run ESLint
+
+To check the project for linting issues:
+
+npm run lint
+
+
+Fix any reported issues before creating a production build or submitting changes.
+
+## 📜 Available Scripts
+
+The following scripts are available in package.json:
+
+Command	Description
+npm run dev	Starts the development server
+npm run build	Creates a production build
+npm start	Starts the production server
+npm run lint	Runs ESLint
+📁 Recommended Project Structure
+
+## A typical Next.js project structure can look like this:
+
+order-tracking/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── public/
+│   └── images/
+│
+├── components/
+│   └── ...
+│
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── next.config.ts
+├── eslint.config.mjs
+├── postcss.config.mjs
+└── README.md
+
+
+Your actual structure may differ depending on how the application has been implemented.
+
+## 🎨 Styling
+
+This project uses Tailwind CSS 4 for styling.
+
+Tailwind utility classes can be used directly inside React/TSX components.
+
+Example:
+
+export default function Example() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+      <h1 className="text-3xl font-bold text-gray-900">
+        Order Tracking
+      </h1>
+    </div>
+  );
+}
+
+## 🧩 Icons
+
+The project uses Lucide React for icons.
+
+Example:
+
+import { Package, Truck, CheckCircle } from "lucide-react";
+
+export default function OrderStatus() {
+  return (
+    <div className="flex gap-4">
+      <Package />
+      <Truck />
+      <CheckCircle />
+    </div>
+  );
+}
+
+## 🔄 Typical Development Workflow
+
+Follow these steps when working on the project:
+
+Step 1 — Get the latest code
+git pull
+
+Step 2 — Install dependencies
+npm install
+
+Step 3 — Start development
+npm run dev
+
+Step 4 — Develop your feature
+
+Make your changes inside the appropriate app, components, or other project directories.
+
+Step 5 — Check linting
+npm run lint
+
+Step 6 — Create a production build
+npm run build
+
+Step 7 — Run the production application
+npm start
+
+## 🛠️ Troubleshooting
+npm install fails
+
+Make sure you are using a supported Node.js version:
+
+node -v
+
+
+Then try:
+
+rm -rf node_modules package-lock.json
+npm install
+
+
+On Windows PowerShell, you can use:
+
+Remove-Item -Recurse -Force node_modules
+Remove-Item package-lock.json
+npm install
+
+Port 3000 is already in use
+
+Run Next.js on another port:
+
+npm run dev -- -p 3001
+
+
+Then open:
+
+http://localhost:3001
+
+Production build fails
+
+First run:
+
+npm run lint
+
+
+Then:
+
+npm run build
+
+
+Check the terminal output for the specific TypeScript, ESLint, or Next.js error.
+
+## 🔐 Security
+
+Do not commit sensitive information such as:
+
+API keys
+
+Database credentials
+
+Authentication secrets
+
+Private tokens
+
+Production environment variables
+
+Use .env.local for local environment configuration.
+
+Example .gitignore entry:
+
+.env
+.env.local
+.env.*.local
+
+## 📌 Project Information
+
+Project Name: Order Tracking
+Version: 0.1.0
+Framework: Next.js
+UI Library: React
+Language: TypeScript
+CSS Framework: Tailwind CSS
+Icons: Lucide React
+Linting: ESLint
+
+
+
+## 📄 License
+
+This project is currently marked as private in package.json.
+
+Add the appropriate license information here if the project is later made public.
